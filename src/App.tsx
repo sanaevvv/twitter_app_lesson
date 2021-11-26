@@ -7,6 +7,7 @@ import Auth from './components/Auth';
 import Feed from './components/Feed';
 
 const App: React.FC = () => {
+  console.log(process.env.REACT_APP_FIREBASE_API_KEY);
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
